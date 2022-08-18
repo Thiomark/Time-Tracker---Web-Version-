@@ -1,0 +1,19 @@
+﻿<Application x:Class="Time_Tracker.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Time_Tracker"
+             StartupUri="Pages/LoginPage.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/ButtonTheme.xaml"/>
+                <ResourceDictionary Source="Themes/ModuleCardTheme.xaml"/>
+                <ResourceDictionary Source="Themes/ScrollBar.xaml"/>
+                <ResourceDictionary Source="Themes/TextInputTheme.xaml"/>
+                <ResourceDictionary Source="Themes/HourseSpentOnModuleTheme.xaml"/>
+                <ResourceDictionary Source="Themes/HourseSpentOnModulesItemTheme.xaml"/>
+                <ResourceDictionary Source="Themes/SearchBoxTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

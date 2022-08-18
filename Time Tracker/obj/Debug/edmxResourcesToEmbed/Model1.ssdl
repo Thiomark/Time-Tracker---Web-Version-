@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StudentDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Hour">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Hours" Type="int" Nullable="false" />
+    <Property Name="ModuleDate" Type="text" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="ModuleId" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="CreatedAt" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Module">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="225" Nullable="false" />
+    <Property Name="NumberOfCredits" Type="int" Nullable="false" />
+    <Property Name="ClassHoursPerWeek" Type="int" Nullable="false" />
+    <Property Name="CreatedAt" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Semester">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="NumberOfWeeksInTheSemester" Type="int" Nullable="false" />
+    <Property Name="StartDateForTheFirstWeek" Type="text" Nullable="false" />
+    <Property Name="CreatedAt" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="CreatedAt" Type="date" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Hour__UserId__3B40CD36">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Hour" Type="Self.Hour" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hour">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Module__UserId__5DCAEF64">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Module" Type="Self.Module" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Module">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Semester__UserId__2FCF1A8A">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Semester" Type="Self.Semester" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Semester">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="StudentDBModelStoreContainer">
+    <EntitySet Name="Hour" EntityType="Self.Hour" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Module" EntityType="Self.Module" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Semester" EntityType="Self.Semester" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Hour__UserId__3B40CD36" Association="Self.FK__Hour__UserId__3B40CD36">
+      <End Role="User" EntitySet="User" />
+      <End Role="Hour" EntitySet="Hour" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Module__UserId__5DCAEF64" Association="Self.FK__Module__UserId__5DCAEF64">
+      <End Role="User" EntitySet="User" />
+      <End Role="Module" EntitySet="Module" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Semester__UserId__2FCF1A8A" Association="Self.FK__Semester__UserId__2FCF1A8A">
+      <End Role="User" EntitySet="User" />
+      <End Role="Semester" EntitySet="Semester" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

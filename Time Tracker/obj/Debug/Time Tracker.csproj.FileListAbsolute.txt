@@ -1,0 +1,35 @@
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\bin\Debug\Time Tracker.exe.config
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\bin\Debug\Time Tracker.exe
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\bin\Debug\Time Tracker.pdb
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Time Tracker.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\MainWindow.g.cs
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Pages\LoginPage.g.cs
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\App.g.cs
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Time Tracker_Content.g.cs
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Time Tracker_MarkupCompile.cache
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Time Tracker_MarkupCompile.lref
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\MainWindow.baml
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Pages\LoginPage.baml
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Time Tracker.g.resources
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Time_Tracker.Properties.Resources.resources
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Time Tracker.csproj.GenerateResource.cache
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Time Tracker.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Time Tracker.exe
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Time Tracker.pdb
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Time Tracker.csproj.CopyComplete
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Themes\ButtonTheme.baml
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Themes\HourseSpentOnModulesItemTheme.baml
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Themes\HourseSpentOnModuleTheme.baml
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Themes\ModuleCardTheme.baml
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Themes\ScrollBar.baml
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Themes\SearchBoxTheme.baml
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Themes\TextInputTheme.baml
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\App.baml
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Pages\RegisterPage.g.cs
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\obj\Debug\Pages\RegisterPage.baml
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\bin\Debug\StudentDB.mdf
+C:\Users\User\Desktop\TEST_TASK_2\Time Tracker\Time Tracker\bin\Debug\StudentDB_log.ldf
