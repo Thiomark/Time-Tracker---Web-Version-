@@ -2,7 +2,7 @@
 
 standalone desktop time management application that fulfils the following requirements.
 
-##IMPORTANT!!
+## IMPORTANT!!
 1. when you click on the green button to run the app, it will not save data to the database because it is in development mode 
 2. Because of this after registartion the app will crash 
 3. To slove this use try running the compiled APP
