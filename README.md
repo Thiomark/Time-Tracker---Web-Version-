@@ -1,36 +1,64 @@
 # Time Tracker
+An ASP.NET web application (ASP.NET Core.)
 
-standalone desktop time management application that fulfils the following requirements.
+![thumbnail](https://res.cloudinary.com/thiomark/image/upload/v1673425605/portfolio/Time_Tracker.jpg)
+![desktop-home](https://res.cloudinary.com/thiomark/image/upload/v1673425125/portfolio/My-Modules-Time-Tracker.png)
+![desktop-home](https://res.cloudinary.com/thiomark/image/upload/v1673425125/portfolio/My-Modules-Time-Tracker2.png)
+![add-module](https://res.cloudinary.com/thiomark/image/upload/v1673425125/portfolio/Create-Time-Tracker.png)
+![hours](https://res.cloudinary.com/thiomark/image/upload/v1673425125/portfolio/My-Modules-Time-Trackere.png)
 
-## IMPORTANT!!
-1. when you click on the green button to run the app, it will not save data to the database because it is in development mode 
-2. Because of this after registartion the app will crash 
-3. To slove this use try running the compiled APP
-4. Click on "Show all Files" on the "solution explore"
-5. a "debug" folder will show up, right click on it and and click "Open file in file explore"
-6. Run the "Time Tracker.exe" application from there 
+# The assignment requirements;
+- [x] The user should be able to register and login
+- [x] The registration information must be stored in a Microsoft SQL Server database
+- [x] Users must fill in the name and student number fields when registering and then create a username and password
+- [x] The user must be able to add the modules they will be working on
+- [x] The user should also be add hours they spent on each module
+- [x] The user should also be edit their profile
+- [x] The User should be able to add a reminder to any moudle
+- [x] All the reminders that are within 24 hours should be displayed on the home page of the user
+- [x] The application must remember the logged in user
+- [x] The user should be able to toggle between using cards or list to display added modules
 
-## Login Data for logging in
-Username = admin, password = 123456
+# How to run the application
 
+## Prerequisite
 
-## Installation
+1) C#
+2) Microsoft SQL Server
+3) IDE (Recommended Visual Studio 2019 or higer)
+4) .Net 3.1
 
-1. Install C# 
-2. Use the package manager NuGet to Install entity framework
-3. Click on the green button to debug, build, compile and run the program
+To create your first migration or a new migration open your Package Manager Console or any other command line of your choice. Make sure that you are in the root folder of the application before creating the migration
+
+## Opening Package Manager Console
+
+1. Click on View => Other Windows => Package Manager Console
+2. Package Manager Console will show up at the bottom left of your IDE
+3. Click on it to open it.
+
+## Enable Migrations (copy the following command)
+```sh
+enable-migrations
+```
+
+## Create your first migration (copy the following command)
+= add-migration InitialMigration
+EF Core will create a directory called Migrations in your project, and generate some files. More information visit [https://docs.microsoft.com/](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=vs)
+
+## Create your database and schema (copy the following command)
+```sh
+update-database
+```
+
+* This will create and add all the tables needed for the web application
+* Your application is ready to run on your new database, and you didn't need to write a single line of SQL. More information visit [https://docs.microsoft.com/](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=vs)
+
+## Running the application
+
+1. Click on Build => Rebuild Solution
+2. Look at the Output tab to see if they were any errors if not:
+3. Click on the green button to run the application
 4. The programme will compile and run
 
-## Register
-1. Enter all the fields that are required
-2. Click on Create Account 
-3. Wait for the application to process your information
-4. If you entered everything correctly the application will navigate to the main page
-
-## Login
-1. Enter Your username and Password
-2. Click on Login 
-3. Wait for the application to process your information
-4. If you entered everything correctly the application will navigate to the main page
-
-* Close the program when done
+More information on how to use the web application is on the User Manual
+## Close the program when done
